@@ -1,7 +1,26 @@
 aid: bitfusion
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/bitfusion.png
 name: Bitfusion
-description: Bitfusion is a company surfaced as a portfolio company of techstars and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Bitfusion (Bitfusion.io) was a GPU virtualization startup whose FlexDirect
+  software pooled and disaggregated GPUs across a network so machine learning and
+  AI workloads could share accelerator hardware on demand. VMware acquired Bitfusion
+  in August 2019 and folded the technology into vSphere as "vSphere Bitfusion."
+  VMware/Broadcom later declared End of Availability for vSphere Bitfusion effective
+  May 2023, with end of maintenance in May 2025. The independent company no longer
+  operates and the bitfusion.io domain no longer resolves; there is no independent,
+  active public API surface remaining for this provider.
 url: https://raw.githubusercontent.com/api-evangelist/bitfusion/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +28,20 @@ x-backed-by:
 - techstars
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: defunct
+x-status-detail: Acquired by VMware (Aug 2019); product vSphere Bitfusion reached End of Availability (May 2023) and end of maintenance (May 2025); bitfusion.io domain no longer resolves.
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- GPU Virtualization
+- Machine Learning
+- Artificial Intelligence
+- Infrastructure
+- Data Center
+- Acquired
+- Defunct
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +51,11 @@ maintainers:
 common:
 - type: Website
   url: https://bitfusion.io/
+- type: Documentation
+  name: vSphere Bitfusion End of Availability (Broadcom)
+  url: https://knowledge.broadcom.com/external/article/322267/end-of-availability-eoa-for-vsphere-bitf.html
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
