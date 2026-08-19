@@ -30,7 +30,7 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 x-status: defunct
 x-status-detail: Acquired by VMware (Aug 2019); product vSphere Bitfusion reached End of Availability (May 2023) and end of maintenance (May 2025); bitfusion.io domain no longer resolves.
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-18'
 tags:
